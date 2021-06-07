@@ -12,10 +12,10 @@ if [[ "$choice" == "c" ]]; then
   #faz a criptografia
   echo "$usertext" | tr '[a-z]' '[x-za-w]'
 else 
-  #input para o texto que vai ser criptografado
+  #input para o texto que vai ser descriptografado
   read -p "Seu texto aqui:  " usrtext
   #deixa tudo em minusculo
   usrtext="${usrtext,,}"
-  #faz a criptografia
+  #faz a descriptografia
   echo "$usrtext" | tr '[x-za-w]' '[a-z]'
 fi
